@@ -6,14 +6,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./Checkout";
 import Login from "./Login"
 
-/*
+ /*
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 
-const productRoutes = require("./api/routes/products");
-const orderRoutes = require("./api/routes/orders");
+const productRoutes = require("./geektext/api/routes/products");
+const orderRoutes = require("./geektext/api/routes/orders");
 
 app.use(morgan("dev"));
 

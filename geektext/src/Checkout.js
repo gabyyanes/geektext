@@ -19,9 +19,25 @@ function Checkout() {
               title={item.title}
               image={item.image}
               price={item.price}
+              qty = {item.qty}
             />
-          ))}
-        </div>
+          ))}       
+     </div>
+     <div>
+          <h2 className="checkout__title">Save for later</h2>
+          {/*Render the basket with products*/}
+          {basket.map((item) => (
+            <CheckoutProduct
+              id={item.id}
+              title={item.title}
+              image={item.image}
+              price={item.price}
+            />
+          ))}       
+     </div>
+       
+       
+       {/* <h2 className="checkout__title">Save for later</h2>*/}
       </div>
       <div className="checkout__right">
         <Subtotal />

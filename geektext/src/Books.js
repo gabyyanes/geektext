@@ -2,7 +2,7 @@ import React from "react";
 import "./Books.css";
 import { useStateValue } from "./StateProvider";
 
-function Books({ id, title, image, price }) {
+function Books({ id, title, image, qty, price}) {
   const [{ basket }, dispatch] = useStateValue();
 
   console.log("this is the basket >>>", basket);
@@ -16,10 +16,11 @@ function Books({ id, title, image, price }) {
         title: title,
         image: image,
         price: price,
+        qty : qty,
       },
     });
   };
-
+  
   return (
     <div className="books">
       <div className="product__info">
